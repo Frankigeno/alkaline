@@ -1,0 +1,7 @@
+LICENSE
+setup.py
+src/alkaline.py
+src/alkaline.egg-info/PKG-INFO
+src/alkaline.egg-info/SOURCES.txt
+src/alkaline.egg-info/dependency_links.txt
+src/alkaline.egg-info/top_level.txt
