@@ -1,4 +1,3 @@
-LICENSE
 setup.py
 src/alkaline.py
 src/alkaline.egg-info/PKG-INFO

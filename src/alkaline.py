@@ -5,11 +5,18 @@ from os import system, name
 class Engine:
 
     def __init__(self, path: str):
+        '''
+        Specify the path to HTML template.
+        NB: close all the tags on HTML file.
+        '''
         self.keywords = {}
         self.vars = {}
         self.content = open(path).read()
 
-    def sostitute(self):
+    def replace(self):
+        '''
+        Replace keywords in template with the values in vars dict 
+        '''
         cont = self.content.split("\n")
 
         for i in self.keywords:
@@ -25,6 +32,9 @@ class Engine:
         return self.content
 
     def execPython(self):
+        '''
+        Execute all the Python code in the template.
+        '''
         root = ET.parse("template.html").getroot()
         pyCode = ""
         for tag in root.findall("python"):
@@ -65,9 +75,12 @@ class Engine:
         exec(pyCode)
 
     def compile(self, var: dict = {}):
+        '''
+        Do all the actions to compile an entire template. Accept as argument the content of vars
+        '''
         self.vars = var
         self.execPython()
-        self.sostitute()
+        self.replace()
         return self.content
 
 if __name__ == "__main__":
