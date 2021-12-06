@@ -1,4 +1,4 @@
-<h1>Alkaline 1.1</h1>
+<h1>Alkaline short guide</h1>
 <h3>Brief introduction</h3>
 <p>Alkaline is a lightweight module made to render HTML server-side using the power and the simplicity of Python.
 </p>
