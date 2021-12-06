@@ -8,8 +8,8 @@ setuptools.setup(
     packages = setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: None",
-        "Operating System :: OS Independent"
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
     ],
     py_modules = ["alkaline"],
     package_dir={'':'src'},
