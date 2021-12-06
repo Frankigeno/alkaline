@@ -10,6 +10,8 @@ To install Alkaline simply type:
 ``` bash
 pip3 install alkaline
 ```
+    
+It doesn't require any dependencies
 
 <h3>Basics</h3>
 <p>So, I will start with an example: I want to display the string “Hello World” in my HTML document. There are two methods: command-line and python. In the first example we will use the command-line option, made for debugging. In the root folder, you have to create the file template.html (assuming that you already know HTML). In template.html you can write all you want, remembering to close all the tags due to XML package problems, but in this case write in the file:</p>
