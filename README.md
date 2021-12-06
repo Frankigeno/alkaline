@@ -1,6 +1,6 @@
 <h1>Alkaline 1.1</h1>
 <h3>Brief introduction</h3>
-<p>Alkaline is a lightweight module made to replace old server-side languages using the power and the simplicity of Python.
+<p>Alkaline is a lightweight module made to render HTML server-side using the power and the simplicity of Python.
 </p>
 
 <h3>Installation</h3>
