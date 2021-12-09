@@ -11,6 +11,7 @@ class Engine:
         '''
         self.keywords = {}
         self.vars = {}
+        self.path = path
         self.content = open(path).read()
 
     def replace(self):
@@ -35,7 +36,7 @@ class Engine:
         '''
         Execute all the Python code in the template.
         '''
-        root = ET.parse("template.html").getroot()
+        root = ET.parse(self.path).getroot()
         pyCode = ""
         for tag in root.findall("python"):
             for i in str(tag.text).splitlines():

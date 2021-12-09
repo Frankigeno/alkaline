@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
     name = "alkaline",
-    version = "0.1.1",
+    version = "0.1.2",
     author = "Levorin Francesco",
     description = "Alkaline is a way to render HTML pages with all the features of Python",
     packages = setuptools.find_packages(),
